@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/abdel/Downloads/index.html -->
+<html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Cultural Islámico de Azuqueca | Aportaciones Masjid Al Taqwa</title>
+  <meta name="description" content="Aportaciones para la Comunidad Islámica de Azuqueca de Henares – Masjid Al Taqwa.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Centro Cultural Islámico de Azuqueca _ Aportaciones Masjid Al Taqwa_files/css2" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-deep:    #06291a;
+      --green-dark:    #0d3d22;
+      --green-mid:     #155230;
+      --green-accent:  #1a6e3c;
+      --green-vivid:   #22a355;
+      --gold:          #b8922a;
+      --gold-bright:   #d4aa45;
+      --gold-light:    #edd57a;
+      --cream:         #f8f4eb;
+      --white:         #ffffff;
+      --label-color:   #e8f5ee;
+      --value-color:   #ffffff;
+      --radius:        16px;
+      --radius-sm:     9px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background:
+        linear-gradient(155deg,
+          var(--green-deep)  0%,
+          var(--green-dark)  30%,
+          var(--green-mid)   60%,
+          var(--green-accent) 85%,
+          #1d9450 100%);
+      min-height: 100vh;
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.018'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page-wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 90px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      animation: fadeDown 0.7s ease both;
+    }
+
+    .logo-wrap {
+      width: 116px;
+      height: 116px;
+      margin: 0 auto 26px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-bright);
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 0 0 6px rgba(184,146,42,0.12), 0 12px 40px rgba(0,0,0,0.35);
+      cursor: pointer;
+      position: relative;
+      transition: box-shadow 0.25s;
+    }
+
+    .logo-wrap:hover {
+      box-shadow: 0 0 0 6px rgba(184,146,42,0.22), 0 16px 48px rgba(0,0,0,0.4);
+    }
+
+    .logo-wrap img { width: 100%; height: 100%; object-fit: cover; display: none; }
+    .logo-placeholder { font-size: 3.2rem; line-height: 1; user-select: none; }
+
+    .logo-upload-hint {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(0,0,0,0.6);
+      font-size: 0.58rem;
+      padding: 5px 3px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+
+    #logo-file-input { display: none; }
+
+    .header-eyebrow {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-bright);
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.45rem, 4.5vw, 2.15rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.22;
+      letter-spacing: 0.01em;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.45);
+      margin-bottom: 8px;
+    }
+
+    header .subtitle {
+      font-family: 'Amiri', serif;
+      font-size: 1.1rem;
+      color: var(--gold-light);
+      letter-spacing: 0.06em;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px auto;
+      width: fit-content;
+    }
+
+    .ornament-line {
+      width: 50px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-bright));
+    }
+
+    .ornament-line.right {
+      background: linear-gradient(90deg, var(--gold-bright), transparent);
+    }
+
+    .ornament-diamond {
+      width: 6px; height: 6px;
+      background: var(--gold-bright);
+      transform: rotate(45deg);
+    }
+
+    .desc-card {
+      background: rgba(255,255,255,0.055);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(184,146,42,0.25);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.7s 0.12s ease both;
+    }
+
+    .desc-es {
+      font-size: 1.02rem;
+      line-height: 1.8;
+      color: var(--cream);
+      font-weight: 300;
+      margin-bottom: 22px;
+    }
+
+    .desc-es strong {
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .desc-es em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .desc-ar {
+      font-family: 'Amiri', serif;
+      font-size: 1.18rem;
+      line-height: 2.1;
+      color: #d4f0e2;
+      text-align: right;
+      direction: rtl;
+      border-top: 1px solid rgba(184,146,42,0.2);
+      padding-top: 20px;
+    }
+
+    .section-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold-bright);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(184,146,42,0.4), transparent);
+    }
+
+    .concept-card {
+      background: rgba(255,255,255,0.055);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(184,146,42,0.25);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.7s 0.22s ease both;
+    }
+
+    .concept-hint {
+      font-size: 0.88rem;
+      color: #b8d9c4;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    .input-group {
+      flex: 1;
+      min-width: 160px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .input-group label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--label-color);
+    }
+
+    .input-group input {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-sm);
+      padding: 12px 15px;
+      font-size: 0.96rem;
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--white);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    }
+
+    .input-group input::placeholder { color: rgba(255,255,255,0.3); }
+
+    .input-group input:focus {
+      border-color: var(--gold-bright);
+      background: rgba(255,255,255,0.13);
+      box-shadow: 0 0 0 3px rgba(184,146,42,0.15);
+    }
+
+    .generate-btn {
+      background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 100%);
+      color: var(--green-deep);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 0.84rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 12px 26px;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+      box-shadow: 0 4px 20px rgba(184,146,42,0.35);
+      white-space: nowrap;
+      height: 46px;
+    }
+
+    .generate-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(184,146,42,0.5);
+      filter: brightness(1.05);
+    }
+
+    .generate-btn:active { transform: translateY(0); }
+
+    .concepto-result {
+      display: none;
+      background: rgba(0,0,0,0.28);
+      border: 1px solid var(--gold-bright);
+      border-radius: var(--radius-sm);
+      padding: 14px 100px 14px 18px;
+      font-size: 0.98rem;
+      color: var(--gold-light);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-top: 16px;
+      position: relative;
+      animation: pop 0.3s ease;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+
+    .concepto-result .copy-btn {
+      position: absolute;
+      right: 10px; top: 50%;
+      transform: translateY(-50%);
+      background: rgba(184,146,42,0.2);
+      border: 1px solid rgba(184,146,42,0.5);
+      border-radius: 6px;
+      color: var(--gold-light);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-family: 'Source Sans 3', sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+
+    .concepto-result .copy-btn:hover { background: rgba(184,146,42,0.38); }
+
+    .data-section { animation: fadeUp 0.7s 0.32s ease both; }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 13px 12px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.55);
+      cursor: pointer;
+      transition: all 0.22s;
+    }
+
+    .tab-btn:hover {
+      background: rgba(255,255,255,0.09);
+      color: rgba(255,255,255,0.8);
+    }
+
+    .tab-btn.active {
+      background: rgba(184,146,42,0.18);
+      border-color: var(--gold-bright);
+      color: var(--gold-light);
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; animation: fadeUp 0.22s ease; }
+
+    .data-card {
+      background: rgba(255,255,255,0.055);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(184,146,42,0.22);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .data-row {
+      display: flex;
+      align-items: center;
+      padding: 15px 28px;
+      gap: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .data-row:last-child { border-bottom: none; }
+
+    .data-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--label-color);
+      min-width: 110px;
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+
+    .data-value {
+      font-size: 0.96rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.65);
+      flex: 1;
+      word-break: break-all;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+
+    .data-row.copyable .data-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .data-row.copyable .data-value.mono {
+      font-family: 'Courier New', monospace;
+      font-size: 0.94rem;
+      letter-spacing: 0.06em;
+    }
+
+    .copy-field-btn {
+      background: rgba(184,146,42,0.14);
+      border: 1px solid rgba(184,146,42,0.35);
+      border-radius: 6px;
+      color: var(--gold-bright);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 5px 13px;
+      cursor: pointer;
+      font-family: 'Source Sans 3', sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.18s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .copy-field-btn:hover {
+      background: rgba(184,146,42,0.3);
+      color: var(--gold-light);
+      border-color: var(--gold-bright);
+    }
+
+    .copy-field-btn.copied {
+      background: rgba(34,163,85,0.3);
+      border-color: var(--green-vivid);
+      color: #80ffb0;
+    }
+
+    .data-row.concepto-pending .data-value {
+      color: rgba(255,255,255,0.35) !important;
+      font-style: italic;
+      font-weight: 300 !important;
+    }
+
+    .bizum-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36px 28px 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .bizum-label-top {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--label-color);
+      margin-bottom: 12px;
+    }
+
+    .bizum-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--white);
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+
+    .copy-all-wrap { text-align: center; margin-top: 22px; }
+
+    .copy-all-btn {
+      background: linear-gradient(135deg, rgba(34,163,85,0.85), rgba(22,110,60,0.85));
+      color: var(--white);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid rgba(34,163,85,0.5);
+      border-radius: 50px;
+      padding: 14px 44px;
+      cursor: pointer;
+      box-shadow: 0 6px 28px rgba(34,163,85,0.3);
+      transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+    }
+
+    .copy-all-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(34,163,85,0.45);
+      filter: brightness(1.08);
+    }
+
+    .copy-all-btn:active { transform: translateY(0); }
+
+    footer {
+      text-align: center;
+      margin-top: 58px;
+      animation: fadeUp 0.7s 0.48s ease both;
+    }
+
+    .ayah-block {
+      background: rgba(0,0,0,0.2);
+      border: 1px solid rgba(184,146,42,0.15);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 22px;
+    }
+
+    .ayah-ar {
+      font-family: 'Amiri', serif;
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      direction: rtl;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1.9;
+    }
+
+    .ayah-es {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      font-style: italic;
+      letter-spacing: 0.02em;
+      line-height: 1.6;
+    }
+
+    .footer-name {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 32px; left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      background: rgba(22,110,60,0.97);
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 0.84rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.28s, transform 0.28s;
+      z-index: 999;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+      border: 1px solid rgba(34,163,85,0.5);
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0%   { transform: scale(0.96); opacity: 0; }
+      100% { transform: scale(1);    opacity: 1; }
+    }
+
+    @media (max-width: 540px) {
+      .page-wrap { padding: 28px 14px 70px; }
+      .desc-card, .concept-card { padding: 22px 20px; }
+      .data-row { padding: 13px 18px; flex-wrap: wrap; }
+      .data-label { min-width: unset; width: 100%; margin-bottom: 2px; }
+      .input-row { flex-direction: column; }
+      .generate-btn { width: 100%; height: auto; padding: 14px; }
+      .bizum-number { font-size: 1.6rem; }
+      .tab-btn { font-size: 0.72rem; padding: 11px 8px; letter-spacing: 0.06em; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-wrap" onclick="document.getElementById('logo-file-input').click()" title="Haz clic para subir el logo">
+      <img id="logo-img" src="" alt="Logo Mezquita Al-Taqwa" style="display: none;">
+      <span class="logo-placeholder" id="logo-placeholder">🕌</span>
+      <span class="logo-upload-hint">Subir logo</span>
+    </div>
+    <input type="file" id="logo-file-input" accept="image/*">
+
+    <p class="header-eyebrow">Aportaciones · المساهمات</p>
+    <h1>Centro Cultural Islámico de Azuqueca<br>Masjid Al Taqwa</h1>
+    <p class="subtitle">مسجد التقوى · Sadaqa Jariya · صدقة جارية</p>
+
+    <div class="ornament">
+      <span class="ornament-line"></span>
+      <span class="ornament-diamond"></span>
+      <span class="ornament-line right"></span>
+    </div>
+  </header>
+
+  <!-- DESCRIPTION -->
+  <div class="desc-card">
+    <p class="desc-es">
+      El <strong>Centro Cultural Islámico de Azuqueca – Masjid Al Taqwa</strong> trabaja para fortalecer la comunidad,
+      promover el conocimiento y mantener la casa de Allah. Tu aportación, ya sea por transferencia o Bizum,
+      es una <em>sadaqa continua</em> que beneficia a todos.
+    </p>
+    <p class="desc-ar">
+      يعمل <strong>المركز الثقافي الإسلامي في أثوكيكا – مسجد التقوى</strong> على تعزيز المجتمع، ونشر المعرفة، والحفاظ على بيت الله.
+      تبرعك، سواء بالتحويل البنكي أو بيزوم، هو <em>صدقة جارية</em> تعود بالنفع على الجميع.
+    </p>
+  </div>
+
+  <!-- CONCEPTO GENERATOR -->
+  <div class="concept-card">
+    <div class="section-label">Genera tu concepto de pago</div>
+    <p class="concept-hint">
+      Introduce tu nombre y apellidos para generar automáticamente el concepto que debes indicar en tu transferencia o Bizum.
+    </p>
+    <div class="input-row">
+      <div class="input-group">
+        <label for="inp-nombre">Nombre</label>
+        <input type="text" id="inp-nombre" placeholder="Ej: Yusuf" autocomplete="given-name">
+      </div>
+      <div class="input-group">
+        <label for="inp-apellidos">Apellidos</label>
+        <input type="text" id="inp-apellidos" placeholder="Ej: García Mansour" autocomplete="family-name">
+      </div>
+      <button class="generate-btn" onclick="generarConcepto()">Generar</button>
+    </div>
+    <div class="concepto-result" id="concepto-result">
+      <span id="concepto-text"></span>
+      <button class="copy-btn" onclick="copiarConcepto()">Copiar</button>
+    </div>
+  </div>
+
+  <!-- DATA TABS -->
+  <div class="data-section">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('transferencia', this)">🏦 Transferencia bancaria</button>
+      <button class="tab-btn" onclick="switchTab('bizum', this)">📱 Bizum</button>
+      <button class="tab-btn" onclick="switchTab('stripe', this)">💳 Tarjeta</button>
+    </div>
+
+    <!-- TRANSFERENCIA -->
+    <div class="tab-panel active" id="tab-transferencia">
+      <div class="data-card">
+        <div class="data-row">
+          <span class="data-label">Beneficiario</span>
+          <span class="data-value">Comunidad Islámica de Azuqueca Henares – Mezquita Al-Taqwa</span>
+        </div>
+        <div class="data-row">
+          <span class="data-label">Banco</span>
+          <span class="data-value">Ibercaja Banco</span>
+        </div>
+        <div class="data-row copyable">
+          <span class="data-label">Titular</span>
+          <span class="data-value" id="v-titular">COMUNIDAD ISLAMICA DE AZUQUECA HENARES</span>
+          <button class="copy-field-btn" onclick="copiarCampo('v-titular', this)">Copiar</button>
+        </div>
+        <div class="data-row copyable">
+          <span class="data-label">IBAN</span>
+          <span class="data-value mono" id="v-iban">ES93 2085 7707 1103 3000 7972</span>
+          <button class="copy-field-btn" onclick="copiarCampo('v-iban', this)">Copiar</button>
+        </div>
+        <div class="data-row copyable concepto-pending" id="row-concepto-transf">
+          <span class="data-label">Concepto</span>
+          <span class="data-value" id="v-concepto-transf">↑ Genera tu concepto arriba</span>
+          <button class="copy-field-btn" onclick="copiarCampo('v-concepto-transf', this)" id="btn-concepto-transf">Copiar</button>
+        </div>
+      </div>
+      <div class="copy-all-wrap">
+        <button class="copy-all-btn" onclick="copiarTodo('transferencia')">📋 Copiar todos los datos</button>
+      </div>
+    </div>
+
+    <!-- BIZUM -->
+    <div class="tab-panel" id="tab-bizum">
+      <div class="data-card">
+        <div class="bizum-block">
+          <p class="bizum-label-top">Número Bizum</p>
+          <span class="bizum-number" id="v-bizum">+34 614 73 17 69</span>
+          <button class="copy-field-btn" style="padding: 8px 24px; font-size:0.76rem;" onclick="copiarCampo('v-bizum', this)">Copiar número</button>
+        </div>
+        <div class="data-row copyable concepto-pending" id="row-concepto-bizum">
+          <span class="data-label">Concepto</span>
+          <span class="data-value" id="v-concepto-bizum">↑ Genera tu concepto arriba</span>
+          <button class="copy-field-btn" onclick="copiarCampo('v-concepto-bizum', this)">Copiar</button>
+        </div>
+      </div>
+      <div class="copy-all-wrap">
+        <button class="copy-all-btn" onclick="copiarTodo('bizum')">📋 Copiar datos Bizum</button>
+      </div>
+    </div>
+
+    <!-- STRIPE / TARJETA -->
+    <div class="tab-panel" id="tab-stripe">
+      <div class="data-card">
+        <div class="bizum-block" style="padding: 44px 28px 40px; border-bottom: none;">
+          <p class="bizum-label-top">Pago seguro con tarjeta</p>
+          <p style="font-size:0.9rem;color:#b8d9c4;margin-bottom:32px;line-height:1.75;font-weight:300;text-align:center;max-width:380px;">
+            Realiza tu aportación de forma rápida y segura con tarjeta de crédito o débito a través de Stripe.
+          </p>
+          <a href="https://buy.stripe.com/test_6oU00d9PX1ZJ162dXE7bW00"
+             target="_blank"
+             rel="noopener noreferrer"
+             id="stripe-btn"
+             style="
+               display: inline-block;
+               background: linear-gradient(135deg, #d4aa45 0%, #b8922a 100%);
+               color: #06291a;
+               font-family: 'Source Sans 3', sans-serif;
+               font-weight: 700;
+               font-size: 1rem;
+               letter-spacing: 0.1em;
+               text-transform: uppercase;
+               text-decoration: none;
+               border-radius: 50px;
+               padding: 16px 52px;
+               box-shadow: 0 6px 28px rgba(184,146,42,0.45);
+               transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+             "
+             onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 36px rgba(184,146,42,0.6)';this.style.filter='brightness(1.07)'"
+             onmouseout="this.style.transform='';this.style.boxShadow='0 6px 28px rgba(184,146,42,0.45)';this.style.filter=''">
+            💳 Aportar ahora
+          </a>
+          <p style="font-size:0.7rem;color:rgba(255,255,255,0.28);margin-top:22px;letter-spacing:0.06em;">
+            Procesado de forma segura por Stripe &nbsp;·&nbsp; Datos cifrados SSL
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /data-section -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ayah-block">
+      <span class="ayah-ar">مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ</span>
+      <span class="ayah-es">«La parábola de quienes gastan sus bienes en el camino de Allah es la de un grano que produce siete espigas» — Corán 2:261</span>
+    </div>
+    <p class="footer-name">Centro Cultural Islámico de Azuqueca de Henares · Masjid Al Taqwa</p>
+  </footer>
+
+</div>
+
+<div id="toast">✓ Copiado al portapapeles</div>
+
+<script>
+  /* ── Logo upload ── */
+  document.getElementById('logo-file-input').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(ev) {
+      const img = document.getElementById('logo-img');
+      img.src = ev.target.result;
+      img.style.display = 'block';
+      document.getElementById('logo-placeholder').style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  /* ── Tabs ── */
+  function switchTab(id, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  /* ── Concepto generator ── */
+  let conceptoGenerado = '';
+
+  function generarConcepto() {
+    const nombre    = document.getElementById('inp-nombre').value.trim();
+    const apellidos = document.getElementById('inp-apellidos').value.trim();
+
+    if (!nombre && !apellidos) {
+      ['inp-nombre', 'inp-apellidos'].forEach(id => {
+        const el = document.getElementById(id);
+        el.style.borderColor = '#e74c3c';
+        el.style.boxShadow = '0 0 0 3px rgba(231,76,60,0.15)';
+        setTimeout(() => { el.style.borderColor = ''; el.style.boxShadow = ''; }, 1400);
+      });
+      document.getElementById('inp-nombre').focus();
+      return;
+    }
+
+    const partes = [nombre, apellidos].filter(Boolean);
+    conceptoGenerado = 'Comunidad Islámica de Azuqueca – ' + partes.join(' ');
+
+    document.getElementById('concepto-text').textContent = conceptoGenerado;
+    document.getElementById('concepto-result').style.display = 'block';
+
+    const ids = ['v-concepto-transf', 'v-concepto-bizum'];
+    const rows = ['row-concepto-transf', 'row-concepto-bizum'];
+
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.textContent = conceptoGenerado;
+        el.style.fontStyle = 'normal';
+      }
+    });
+
+    rows.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.remove('concepto-pending');
+    });
+  }
+
+  function copiarConcepto() {
+    if (!conceptoGenerado) return;
+    copiarTexto(conceptoGenerado);
+    const btn = document.querySelector('.concepto-result .copy-btn');
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => btn.textContent = 'Copiar', 2200);
+  }
+
+  /* ── Copy individual field ── */
+  function copiarCampo(fieldId, btn) {
+    const el = document.getElementById(fieldId);
+    if (!el) return;
+    const texto = el.textContent.trim();
+    if (!texto || texto.startsWith('↑')) return;
+    copiarTexto(texto);
+    btn.textContent = '✓ Ok';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copiar';
+      btn.classList.remove('copied');
+    }, 2200);
+  }
+
+  /* ── Copy all ── */
+  function copiarTodo(tipo) {
+    const concepto = conceptoGenerado || '(introduce tu nombre y apellidos arriba)';
+    let texto = '';
+
+    if (tipo === 'transferencia') {
+      texto =
+        'TRANSFERENCIA BANCARIA\n' +
+        '──────────────────────────────────\n' +
+        'Beneficiario: Comunidad Islámica de Azuqueca Henares – Mezquita Al-Taqwa\n' +
+        'Banco: Ibercaja Banco\n' +
+        'Titular: COMUNIDAD ISLAMICA DE AZUQUECA HENARES\n' +
+        'IBAN: ES93 2085 7707 1103 3000 7972\n' +
+        'BIC/SWIFT: CAZRES2Z\n' +
+        'Concepto: ' + concepto;
+    } else if (tipo === 'bizum') {
+      texto =
+        'BIZUM\n' +
+        '──────────────────\n' +
+        'Número: +34 614 73 17 69\n' +
+        'Concepto: ' + concepto;
+    }
+
+    copiarTexto(texto);
+  }
+
+  /* ── Clipboard helper ── */
+  function copiarTexto(texto) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(texto).then(mostrarToast).catch(() => fallbackCopy(texto));
+    } else {
+      fallbackCopy(texto);
+    }
+  }
+
+  function fallbackCopy(texto) {
+    const ta = document.createElement('textarea');
+    ta.value = texto;
+    ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0;';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    mostrarToast();
+  }
+
+  /* ── Toast ── */
+  function mostrarToast() {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2300);
+  }
+
+  /* ── Enter on inputs ── */
+  ['inp-nombre', 'inp-apellidos'].forEach(id => {
+    document.getElementById(id).addEventListener('keydown', e => {
+      if (e.key === 'Enter') generarConcepto();
+    });
+  });
+</script>
+
+</body></html>
